@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegation</title>
+</head>
+<body>
+    <table>
+        <ul id="table">
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Pomegranate</li>
+        </ul>
+    </table>
+
+    <script>
+        document.getElementById('table').addEventListener('click',function(event){
+            if(event.target.tagName === 'LI'){
+                console.log('Clicked', event.target.tagName)
+            }
+        })
+    </script>
+</body>
+</html>

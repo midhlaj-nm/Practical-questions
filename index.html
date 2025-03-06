@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <button id="decre">Decrement</button>
+    <span id="count">0</span>
+    <button id="incre">Increment</button>
+    <p id="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quam quas earum dicta ipsa necessitatibus! At corrupti quidem quaerat veritatis quam odit quos temporibus illum! Eveniet repellat exercitationem nemo ad.</p>
+    <div id="container">wefrgikewroimwoairepgwoijer</div>
+    <button id="btn">Red / Blue</button>
+
+<script>
+    let count = 0 
+    document.getElementById('decre').addEventListener('click',()=> {
+        count--
+    document.getElementById('count').textContent = count;
+    })
+    document.getElementById('incre').addEventListener('click',()=> {
+        count++
+    document.getElementById('count').textContent = count;
+    })
+
+    const newDiv = document.createElement("div");
+    newDiv.textContent = "Hello world";
+    document.body.append(newDiv)
+
+    document.getElementById("text").textContent = 'Hello Midhlaj'
+
+    const div = document.getElementById("container")
+    if(div) div.remove()
+
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", () =>{
+        if(!btn.style.backgroundColor || btn.style.backgroundColor === "") {
+            btn.style.backgroundColor = "blue";
+        } else if (btn.style.backgroundColor === "blue") {
+            btn.style.backgroundColor = "red"; 
+        } else {
+            btn.style.backgroundColor = ""
+        }
+    })
+</script>
+</body>
+</html>

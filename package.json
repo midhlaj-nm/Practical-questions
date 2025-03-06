@@ -1,0 +1,14 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "addTwonum.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "events": "^3.3.0"
+  }
+}

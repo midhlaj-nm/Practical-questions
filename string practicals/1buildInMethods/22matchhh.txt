@@ -1,0 +1,20 @@
+Detailed Notes
+Flags:
+
+g: Global match (finds all matches).
+i: Case-insensitive match.
+m: Multiline match (affects ^ and $).
+Others like s, u, and y are advanced and less common.
+Difference Between match and matchAll:
+
+matchAll() provides an iterator that includes detailed info for all matches, even with the g flag.
+Use matchAll if you need indices or more details for global matches.
+
+
+            diffrenec of match and matchAll
+ match find first match regular expression
+ using g you can get all match regualr expression
+ it return in array
+
+ matchall return all matching regular expression
+ it return in nested array
