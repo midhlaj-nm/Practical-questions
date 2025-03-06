@@ -6,12 +6,13 @@ app.get('/user/:id',(req,res)=>{
     res.send(`This is the user id: ${id}`)
 })
 
-app.get('/products/:code',(req,res)=>{
+app.get('/products/:category/:code',(req,res)=>{
     const code = req.params.code
-    res.send(`This is product code: ${code}`)
+    const category = req.params.category
+    res.send(`This is product category: ${category}<br>and this is the code: ${code}`)
 })
 
 
 app.listen(3000, ()=>{
-    console.log('Portis running in 3000')
+    console.log('Port is running in 3000')
 })
