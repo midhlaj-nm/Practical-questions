@@ -6,7 +6,7 @@ app.use((req,res,next)=>{
     }
     next();
 })
-app.get('/hi',(req,res)=>{
+app.get((req,res)=>{
     console.log("this is get method")
 })
 app.post('/',(req,res)=>{
