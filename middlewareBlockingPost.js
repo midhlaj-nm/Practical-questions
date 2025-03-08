@@ -7,17 +7,15 @@ app.use((req,res,next)=>{
     next();
 })
 app.get((req,res)=>{
-    console.log("this is get method")
+    res.send("this is get method")
 })
 app.post('/',(req,res)=>{
-    console.log("this is post method")
+    res.send("this is post method")
 })
 
 app.put('/',(req,res)=>{
-   return res.json({msg:"put working"})
+   res.send("put working")
 })
-
-
 
 app.listen(3013,()=>{
     console.log("server is running 3013")

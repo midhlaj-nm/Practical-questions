@@ -14,15 +14,6 @@ console.log(add1());
 
 
 
-
-
-
-
-
-
-
-
-
 const sum = (a ,b) => 6 + 8
 console.log(sum())
 

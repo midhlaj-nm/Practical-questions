@@ -1,9 +1,13 @@
-function gap(limit){
-    let num = 2;
-    let interval= setInterval(() => {
-        console.log(num)
-        num += 2
-        if(num > limit) clearInterval(interval)
-    },1000)
-}
-gap(20)
+function lim(limit){
+    let num = 2
+    const pr = setInterval(()=>{
+      console.log(num)
+      num += 2
+      if(num > limit){
+         clearInterval(pr)
+         console.log('Timer stopped succssefully')
+        }
+    }, 2000)
+  }
+  
+  lim(10)
