@@ -10,14 +10,14 @@ fs.mkdir('TodaysDate',(err)=>{
     }
 })
 
-//Delete folder
-// fs.rmdir('TodaysDate',(err)=>{
-//     if(err){
-//         console.log('Error found',err)
-//     } else {
-//         console.log('Deletion completed')
-//     }
-// })
+// Delete folder
+fs.rmdir('TodaysDate',(err)=>{
+    if(err){
+        console.log('Error found',err)
+    } else {
+        console.log('Deletion completed')
+    }
+})
 
 //list files and folders
 fs.readdir('.',(err, files) => {
@@ -54,6 +54,10 @@ console.log('Dir name ',__dirname)
 //file in anothr Directory
 const dir = 'C:\\Users\\midhl\\Documents\\VScode\\JavaScript\\fs module\\TodaysDate'
 const filename = path.join(dir, 'Date.txt')
+
+if(!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, {recursive : true});
+}
 
 fs.writeFile(filename, new Date().toString(), (err)=>{
      return err ? err : 'File created Successfully'
