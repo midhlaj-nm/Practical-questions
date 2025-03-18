@@ -12,6 +12,7 @@
     <p id="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quam quas earum dicta ipsa necessitatibus! At corrupti quidem quaerat veritatis quam odit quos temporibus illum! Eveniet repellat exercitationem nemo ad.</p>
     <div id="container">wefrgikewroimwoairepgwoijer</div>
     <button id="btn">Red / Blue</button>
+    <button id="butn" type="button">Click me</button>
 
 <script>
     let count = 0 
@@ -24,6 +25,13 @@
     document.getElementById('count').textContent = count;
     })
 
+    document.getElementById('butn').addEventListener('click', function(){
+        console.log(this.innerText)
+    })
+
+    document.getElementById('butn').addEventListener('click', ()=>{
+        console.log(this.innerText)
+    })
     const newDiv = document.createElement("div");
     newDiv.textContent = "Hello world";
     document.body.append(newDiv)
