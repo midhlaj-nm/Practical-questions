@@ -46,4 +46,3 @@ _Create a new branch_
 _Commit your changes_
 
 _Submit a pull request_
-
